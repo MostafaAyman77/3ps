@@ -1,0 +1,251 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --main-color: #f15a3c;
+  --text-color: #083c61;
+  --hover-main-color: #e05e32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.header {
+  width: 1268px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+  position: relative;
+}
+.hero-container {
+  position: relative;
+}
+.navbar-brand .logo {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 80px;
+}
+.navbar-nav a {
+  margin: 0 15px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.search {
+  margin: 7px 0 0 15px;
+  cursor: pointer;
+}
+.language {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color) !important;
+  border-bottom: solid 2px var(--main-color);
+}
+/* Hero Content */
+.hero-content {
+  max-width: 700px;
+  position: absolute;
+  top: 450px;
+}
+.hero-content .hero-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 73px;
+}
+.hero-content .hero-text {
+  /* max-width: 794px; */
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 48px;
+  font-family: "946 Latin", sans-serif;
+}
+.btnn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  clip-path: polygon(
+    15px 0,
+    calc(100% - 15px) 0,
+    105% 50%,
+    calc(100% - 15px) 100%,
+    15px 100%,
+    -5% 50%
+  );
+
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.btnn:hover {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+/* 
+-
+End Hero 
+-
+*/
+.who-are {
+  padding: 0;
+  flex-wrap: wrap;
+}
+.video-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: relative;
+  width: 49%;
+  cursor: pointer;
+}
+
+.video-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.who-are .text-content {
+  margin-top: 100px;
+  width: 49%;
+  padding-left: 30px;
+}
+
+.who-are .text-content h2 {
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 73px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.who-are .text-content h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: var(--text-color);
+}
+
+.who-are .text-content p {
+  font-size: 22px;
+  line-height: 35px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.btn-read-more {
+  width: 295px;
+}
+.btn-read-more:hover {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px -5px 8px rgba(0, 0, 0, 0.7);
+}
+/* 
+
+*/
+
+/* 
+  CSS for Decorative Corner Lines
+  Add this to your style.css file
+*/
+
+.who-are {
+  overflow: hidden;
+}
+
+/* Common styles for both decorative elements */
+.who-are::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--main-color);
+  z-index: -1;
+}
+/* Bottom-right decorative element */
+.who-are::after {
+  bottom: -100px;
+  left: -50px;
+  border-width: 1px 1px 1px 1px;
+  transform: rotate(0);
+}
+
+/* Optional: Hide the lines on small mobile screens if they look cluttered */
+@media (max-width: 767px) {
+  .who-are::after {
+    display: none;
+  }
+  .who-are .text-content,
+  .who-are .video-container {
+    width: 100%;
+  }
+  .who-are .text-content {
+    text-align: center;
+    width: 100%;
+    margin: 0 0;
+  }
+}
+/* our-services */
+
+.heading h2 {
+  margin: 50px auto 35px auto;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 22%;
+  color: var(--text-color);
+  text-align: center;
+}
+.our-services .services {
+  display: flex;
+  align-items: center;
+}
+.our-services .services .service {
+  width: 205px;
+  height: 700px;
+  overflow: hidden;
+  opacity: 0.7;
+  position: relative;
+}
+.our-services .services .service img {
+  width: 205px;
+  height: 700px;
+}
+.our-services .services .service h3 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 900;
+  position: absolute;
+  top: 15%;
+}
