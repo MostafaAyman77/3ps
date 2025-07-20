@@ -231,14 +231,14 @@ End Hero
   align-items: center;
 }
 .our-services .services .service {
-  width: 205px;
+  width: 240px;
   height: 700px;
   overflow: hidden;
   opacity: 0.7;
   position: relative;
 }
 .our-services .services .service img {
-  width: 205px;
+  width: 240px;
   height: 700px;
 }
 .our-services .services .service h3 {
